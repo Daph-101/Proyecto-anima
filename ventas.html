@@ -9,7 +9,9 @@
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
+      
     />
+    <link rel="stylesheet" href="">
   </head>
   <body>
     <header>
@@ -59,35 +61,53 @@
         </div>
       </nav>
     </header>
-
-    <footer class="bg-dark text-white p-2 border-top border-warning border-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-3">
-            <img
-              src="/img/automotora_vip_logo.png"
-              alt="Logo AutoVIP"
-              class="img-fluid"
-              style="height: 20px"
-            />
-          </div>
-          <div class="col-3">
-            <ul class="list-unstyled">
-              <li>Ventas 0km</li>
-              <li>Ventas usados</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <ul class="list-unstyled">
-              <li>Sobre Nosotros</li>
-              <li>Contacto</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <p>Copyright © AutoVIP 2016</p>
-          </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6">
+           <h3> Ventas</h3>
         </div>
-      </div>
-    </footer>
+        <div class="col-md-6">
+
+          <!-- FALTA EL LOGO, ESTA EL CODIGO PUESTO PERO NO LO LEE -->
+
+          <p class="text-end"><i class="bi bi-arrow-left-right"> UYU/USD 28.38</i></p>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-2">
+      <form class="bg-light"> 
+        <p class="border-bottom">Filtro</p>
+        <div class="mb-3">
+          <label for="año" class="form-label">Año</label>
+          <select class="form-select" id="anio" name="anio">
+            <option selected disabled>Selecciona un año</option>
+          </select>
+        </div>
+    
+        <div class="mb-3">
+          <label for="marca" class="form-label">Marca</label>
+          <select class="form-select" id="marca" name="marca">
+            <option selected disabled>Selecciona una marca</option>
+          </select>
+        </div>
+    
+        <div class="mb-3">
+          <label for="modelo" class="form-label">Modelo</label>
+          <select class="form-select" id="modelo" name="modelo">
+            <option selected disabled>Selecciona un modelo</option>
+          </select>
+        </div>
+    
+        <div class="mb-3">
+          <label for="estado" class="form-label">Estado</label>
+          <select class="form-select" id="estado" name="estado">
+            <option selected disabled>Selecciona un estado</option>
+
+            
+            <button type="button" class="btn btn-warning">Warning</button>
+      </form>
+      
+    </div>
+    
   </body>
 </html>
